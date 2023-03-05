@@ -1,6 +1,6 @@
 Algoritmo "EX015"
 
-var angulo, seno, coseno, tg, secante, cosecante, cotangente: real
+var angulo, anguloRad, seno, coseno, tg, secante, cosecante, cotangente: real
 
 Inicio
 
@@ -8,21 +8,24 @@ Inicio
     escreva("Informe um ângulo em graus(º): ")
     leia(angulo)
     
-    //PROCESSO
+    //Converte grau em radiano
+    anguloRad <-  (angulo * PI) / 180
     
-    //seno <-
-    //coseno <-
-    //tg <-
-    //secante <-
-    //cosecante <-
-    //cotangente <-
+    //PROCESSO
+    seno <- Sen(anguloRad)
+    coseno <- Cos(anguloRad)
+    tg <- Tan(anguloRad)
+
+    cosecante <- 1 / seno
+    secante <- 1 / coseno
+    cotangente <- 1 / tg
 
     //SAÍDA
-    escreval("Valor do seno: ", seno, "º")
-    escreval("Valor do coseno: ", coseno, "º")
-    escreval("Valor do tg: ", tg, "º")
-    escreval("Valor do secante: ", secante, "º")
-    escreval("Valor do cosecante: ", cosecante, "º")
-    escreval("Valor do cotangente: ", cotangente, "º")
+    escreval("Valor do seno: ", seno:5:4, "º")
+    escreval("Valor do coseno: ", coseno:5:4, "º")
+    escreval("Valor da tg: ", tg:5:4, "º")
+    escreval("Valor do secante: ", secante:5:4, "º")
+    escreval("Valor do cosecante: ", cosecante:5:4, "º")
+    escreval("Valor do cotangente: ", cotangente:5:4, "º")
 
 Fimalgoritmo
