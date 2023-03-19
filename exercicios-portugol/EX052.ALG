@@ -18,7 +18,6 @@ Inicio
     multaMesTotal <- (fitasAlugadasMes / 10) * multaAluguel
     faturamentoAno <- (fitasAlugadasMes * 12) * valorAluguel + multaMesTotal * 12
 
-
         //FITAS
         
             //[ Fitas estragadas ]:
@@ -48,11 +47,8 @@ Inicio
                 escreval("fitas repostas: ", fitasReposic)
             fimse
 
-
             //Quantidade final de fitas
             qtdFitasFinal <- qtdFitas - fitasEstrag + fitasReposic
-
-    
 
     //SAÍDA
     escreval("Faturamento anual: R$", faturamentoAno:5:2)

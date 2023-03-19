@@ -1,6 +1,6 @@
 Algoritmo "EX030"
 
-var x, num1, num2, num3, num4: real
+var x, num1, num2, num3: real
 
 Inicio
 
@@ -13,9 +13,6 @@ Inicio
 
     escreva("Digite o valor do terceiro número: ")
     leia(num3)
-
-    escreva("Digite o valor do quarto número: ")
-    leia(num4)
 
     //PROCESSO
     x <- num1 + ( num2 / (num3 + num1) ) + 2 * (num1 - num2) + 6
